@@ -32,5 +32,18 @@ class HadethListAdapter(
         position: Int,
     ) {
         holder.binding.chapterTitle.text = hadethList[position].title
+
+        if (onItemClickListener != null) {
+            holder.binding.root.setOnClickListener {
+                onItemClickListener?.onItemClick(position, hadeth = hadethList[position])
+            }
+        }
+    }
+
+    var onItemClickListener: OnItemClickListener? = null
+
+    fun interface OnItemClickListener {
+        fun onItemClick(
+            position: Int, hadeth: Hadeth)
     }
 }
