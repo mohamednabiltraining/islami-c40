@@ -36,6 +36,7 @@
         android:id="@+id/sebhaBody"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/descriptionOfsebhaBody"
         app:layout_constraintWidth_percent=".5"
         app:layout_constraintTop_toTopOf="@id/headOf"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@id/sebhaBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="عدد التسبيحات "
+        android:text="@string/tssabehCounter"
         style="@style/titleRegular"/>
 
     <TextView
@@ -63,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text="@string/startOfCounter"
         style="@style/bodyRegular"
         app:layout_constraintTop_toBottomOf="@id/counterTittle"
         android:background="@drawable/counter_background"
@@ -80,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@id/counter"
         android:background="@drawable/counter_background"
         android:backgroundTint="?attr/colorPrimary"
-        android:text="الحمدلله "
+        android:text="@string/cuurentAzkar"
         android:gravity="center_vertical|center_horizontal"
         style="@style/bodyRegular"
         app:layout_constraintWidth_percent=".4"

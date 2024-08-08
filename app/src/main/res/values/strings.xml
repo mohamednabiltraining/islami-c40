@@ -4,6 +4,10 @@
     <string name="hadeth" translatable="false">Hadeth</string>
     <string name="tasbeh" translatable="false">Tasbeh</string>
     <string name="radio" translatable="false">Radio</string>
+    <string name="tssabehCounter" translatable="false">عدد التسبيحات</string>
+    <string name="cuurentAzkar" translatable="false">الحمدلله</string>
+    <string name="startOfCounter" translatable="false">0</string>
+    <string name="descriptionOfsebhaBody" translatable="false">sebhaBody</string>
     <array name="azkar">
         <item>الحمدلله</item>
     <item > سبحان الله</item>

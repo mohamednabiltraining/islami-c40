@@ -1,6 +1,5 @@
 package com.route.islamic41.ui.home.tasbeh
 
-import android.content.res.Resources
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,7 +20,7 @@ class TasbehFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View{
         binding = FragmentTasbehBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
