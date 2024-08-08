@@ -1,7 +1,14 @@
 <resources>
-    <string name="app_name">IslamiC41</string>
-    <string name="quran">Quran</string>
-    <string name="hadeth">Hadeth</string>
-    <string name="tasbeh">Tasbeh</string>
-    <string name="radio">Radio</string>
+    <string name="app_name" translatable="false">IslamiC41</string>
+    <string name="quran" translatable="false">Quran</string>
+    <string name="hadeth" translatable="false">Hadeth</string>
+    <string name="tasbeh" translatable="false">Tasbeh</string>
+    <string name="radio" translatable="false">Radio</string>
+    <array name="azkar">
+        <item>الحمدلله</item>
+    <item > سبحان الله</item>
+        <item > الله اكبر</item>
+        <item >لا اله الا الله</item>
+    </array>
+
 </resources>
