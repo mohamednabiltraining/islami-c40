@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:background="@drawable/main_background">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bodyOfDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".28"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/headOf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".24"/>
+
+    <ImageView
+        android:id="@+id/sebhaHead"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/head_sebha_logo"
+        app:layout_constraintBottom_toBottomOf="@id/bodyOfDesign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".13"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".2" />
+
+    <ImageView
+        android:id="@+id/sebhaBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/descriptionOfsebhaBody"
+        app:layout_constraintWidth_percent=".5"
+        app:layout_constraintTop_toTopOf="@id/headOf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/body_sebha_logo"
+        android:adjustViewBounds="true"
+        />
+
+
+    <TextView
+        android:paddingVertical="20dp"
+        android:id="@+id/counterTittle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sebhaBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tssabehCounter"
+        style="@style/titleRegular"/>
+
+    <TextView
+        android:padding="18dp"
+        android:id="@+id/counter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/startOfCounter"
+        style="@style/bodyRegular"
+        app:layout_constraintTop_toBottomOf="@id/counterTittle"
+        android:background="@drawable/counter_background"
+        />
+
+    <TextView
+        android:layout_marginVertical="20dp"
+        android:paddingVertical="10dp"
+        android:id="@+id/azkar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/counter"
+        android:background="@drawable/counter_background"
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="@string/cuurentAzkar"
+        android:gravity="center_vertical|center_horizontal"
+        style="@style/bodyRegular"
+        app:layout_constraintWidth_percent=".4"
+
+        />
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
